@@ -1,60 +1,31 @@
-Hotel Reservation System
+# Hotel Reservation System 🏨
 
-Overview
+Welcome to the Hotel Reservation System, a Java-based application for managing hotel reservations efficiently. Whether you're running a small inn or a boutique hotel, this system simplifies the reservation process, enhances guest management, and keeps your business organized.
 
-A simple Java-based hotel reservation system using MySQL. It allows users to book rooms, view, update, and delete reservations.
+## Features 🌟
 
-Features
+- **Reserve a Room:** Easily make new reservations by providing guest details, room numbers, and contact information.
 
-Reserve a Room
+- **View Reservations:** Get an overview of all current reservations, including guest names, room numbers, contact details, and reservation dates.
 
-View Reservations
+- **Edit Reservation Details:** Update guest names, room numbers, and contact information for existing reservations.
 
-Get Room Number
+- **Delete Reservations:** Remove reservations that are no longer needed.
 
-Update Reservation
+## Getting Started 🚀
 
-Delete Reservation
+### Prerequisites
 
-Requirements
+- Java Development Kit (JDK)
+- MySQL Database
+- MySQL Connector/J (Java)
 
-Java (JDK 8 or higher)
+### Usage 📋
+- Upon running the application, you'll be presented with a menu to choose your desired operation (reservation, viewing, editing, or exiting).
 
-MySQL Database
+- Follow the prompts to input reservation details, view current reservations, edit existing bookings, and more.
 
-MySQL JDBC Driver
 
-Setup
 
-Create a MySQL database hotel_db and a reservations table:
 
-CREATE DATABASE hotel_db;
-USE hotel_db;
-CREATE TABLE reservations (
-    reservation_id INT AUTO_INCREMENT PRIMARY KEY,
-    guest_name VARCHAR(255),
-    room_number INT,
-    contact_number VARCHAR(20),
-    reservation_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP
-);
-
-Update database credentials in HotelReservationSystem.java:
-
-private static final String url = "jdbc:mysql://localhost:3306/hotel_db";
-private static final String username = "root";
-private static final String password = "Admin@123";
-
-Run the Application
-
-Compile the program:
-
-javac HotelReservationSystem.java
-
-Run the application:
-
-java HotelReservationSystem
-
-Author
-
-Developed by Harsh Tripathi.
-
+### Happy booking! 🌆
